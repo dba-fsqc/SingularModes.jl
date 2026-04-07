@@ -1,7 +1,7 @@
 name = "SingularModes"
 uuid = "630bf884-3bbe-4fe9-8bc5-255f673a196e"
-version = "1.0.0-DEV"
-authors = ["David Ba"]
+version = "0.1.0"
+authors = ["David Bachmann"]
 
 [deps]
 ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
