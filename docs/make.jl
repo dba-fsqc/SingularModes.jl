@@ -13,7 +13,7 @@ using Documenter, SingularModes
 
 makedocs(
     sitename="SingularModes.jl",
-    authors="David Ba",
+    authors="David Bachmann",
     modules=[
         SingularModes.BasicFunctions,
         # SingularModes.FigureDefaults,

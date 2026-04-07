@@ -1,3 +1,69 @@
 # SingularModes
 
 [![Build Status](https://github.com/dba-fsqc/SingularModes.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/dba-fsqc/SingularModes.jl/actions/workflows/CI.yml?query=branch%3Amain)
+
+Software package written in [Julia](https://julialang.org) for the propagation of transverse laser modes through turbulent media with particular focus on singular modes.
+By construction, singular modes are the optimal communication modes which are obtained via a singular value decomposition of a given channel's transmission matrix.
+
+## Installation (soon hopefully)
+
+Once Julia is running on your system, the SingularModes package can straightforwardly be installed via Julia's internal package manager:
+
+```bash
+julia> ]
+pkg> add SingularModes
+```
+
+Or, equivalently, via the `Pkg` API:
+
+```bash
+julia> import Pkg; Pkg.add("SingularModes")
+```
+
+## Documentation
+
+A full documentation is available at [dba-fsqc.github.io/SingularModes.jl](https://dba-fsqc.github.io/SingularModes.jl/).
+
+The package is structured as follows:
+
+```
+.
+│
+├── src                    [Julia modules]
+│   ├── BasicFunctions.jl  [library of general functions and definitions]
+│   ├── FigureDefaults.jl  [default settings for plotting]
+│   ├── ModeGeneration.jl  [library for transverse mode generation]
+│   ├── Phasescreens.jl    [library for phase screen generation]
+│   ├── Plotting.jl        [library for plotting routines]
+│   ├── PowerSpectra.jl    [library of power spectra for different media]
+│   ├── Propagation.jl     [library for all functions related to propagation]
+│   └── Statistics.jl      [library for the statistical analysis of phase screens]
+│
+├── docs                   [documentation of the package]
+│   └── ...
+│
+├── examples               [code examples]
+│   ├── static             [cached arrays of LG/ZK/KL modes for faster computation]
+│   │
+│   ├── parameters.jl      [sample parameter file]
+│   ├── LG-Beams.jl        [sample code for the propagtion of Lagurre-Gaussian beams]
+│   ├── Singularmodes.jl   [sample code for the computation of singular modes]
+│   └── ...
+│
+├── tests                  [code tests]
+│   └── ...
+│
+├── LICENSE                [GPL-3.0-or-later]
+├── README.md              [Short documentation]
+│
+└── ...
+```
+
+## Project status
+This package emerged from a PhD project and is based on the following publications:
+
+- Bachmann, D., Isoard, M., Shatokhin, V. N., Sorelli, G., Treps, N., and Buchleitner, A. (2023). Highly Transmitting Modes of Light in Dynamic Atmospheric Turbulence. *Physical Review Letters*, **130**(7):073801. [10.1103/physrevlett.130.073801](https://doi.org/10.1103/PhysRevLett.130.073801).
+		
+- Bachmann, D., Klug, A., Isoard, M., Shatokhin, V. N., Sorelli, G., Buchleitner, A., and Forbes, A. (2024). Universal Crosstalk of Twisted Light in Random Media. *Physical Review Letters,* **132**(6):063801. [10.1103/physrevlett.132.063801](https://doi.org/10.1103/physrevlett.132.063801).
+		
+- Bachmann, D., Isoard, M., Shatokhin, V. N., Sorelli, G., and Buchleitner, A. (2025). Accurate Zernike-corrected phase screens for arbitrary power spectra. *Optical Engineering,* **64**(5):058102. [10.1117/1.OE.64.5.058102](https://doi.org/10.1117/1.OE.64.5.058102).

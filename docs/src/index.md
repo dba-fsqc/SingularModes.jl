@@ -1,6 +1,16 @@
 # SingularModes.jl
 
-Software package written in [Julia](https://julialang.org) for the propagation of transverse laser modes through turbulent media.
+Software package written in [Julia](https://julialang.org) for the propagation of transverse laser modes through turbulent media with particular focus on singular modes.
+By construction, singular modes are the optimal communication modes which are obtained via a singular value decomposition of a given channel's transmission matrix.
+
+## Project status
+This package emerged from a PhD project and is based on the following publications:
+
+- Bachmann, D., Isoard, M., Shatokhin, V. N., Sorelli, G., Treps, N., and Buchleitner, A. (2023). Highly Transmitting Modes of Light in Dynamic Atmospheric Turbulence. *Physical Review Letters*, **130**(7):073801. [10.1103/physrevlett.130.073801](https://doi.org/10.1103/PhysRevLett.130.073801).
+		
+- Bachmann, D., Klug, A., Isoard, M., Shatokhin, V. N., Sorelli, G., Buchleitner, A., and Forbes, A. (2024). Universal Crosstalk of Twisted Light in Random Media. *Physical Review Letters,* **132**(6):063801. [10.1103/physrevlett.132.063801](https://doi.org/10.1103/physrevlett.132.063801).
+		
+- Bachmann, D., Isoard, M., Shatokhin, V. N., Sorelli, G., and Buchleitner, A. (2025). Accurate Zernike-corrected phase screens for arbitrary power spectra. *Optical Engineering,* **64**(5):058102. [10.1117/1.OE.64.5.058102](https://doi.org/10.1117/1.OE.64.5.058102).
 
 
 ## Installation
@@ -10,6 +20,7 @@ Software package written in [Julia](https://julialang.org) for the propagation o
 You need a running copy of [Julia](https://julialang.org) to use this package. We recommend to install it via the package manager of your system, e.g., `pacman` or `apt-get` on Arch or Debian-based Linux, respectively.
 
 ```bash
+# Arch linux
 sudo pacman -S julia
 ```
 
@@ -133,3 +144,7 @@ Order   = [:function, :type]
 Modules = [SingularModes.Statistics]
 Order   = [:function, :type]
 ```
+
+## Examples
+
+TBC...
