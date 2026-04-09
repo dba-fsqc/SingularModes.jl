@@ -11,6 +11,7 @@ include("Statistics.jl")
 
 using .BasicFunctions
 export ft, ift, zeropad, inner_circ, rect, cart2pol, pol2cart
+export meshgrid
 export print_paras, msum, norm_mode, wopt, rayleigh_waist
 export norm_coeff
 

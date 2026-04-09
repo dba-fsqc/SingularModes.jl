@@ -5,6 +5,7 @@
 module BasicFunctions
 
 export ft, ift, zeropad, inner_circ, rect, cart2pol, pol2cart
+export meshgrid
 export print_paras, msum, norm_mode, wopt, rayleigh_waist
 export norm_coeff
 
@@ -42,7 +43,7 @@ end
 """
     struct_fcn2_ft(ph, mask, delta)
 
-Structure function based on FT from Schmidt (2010). Very sensitive to
+Structure function based on FT from [Schmidt (2010)]. Very sensitive to
 boundaries, needs zeropadding. Not tested. Recommended not to use.
 """
 function struct_fcn2_ft(
