@@ -13,6 +13,7 @@ using LinearAlgebra
 using Statistics
 using HypergeometricFunctions
 using Printf
+using SpecialFunctions
 
 using ..BasicFunctions
 using ..ModeGeneration
