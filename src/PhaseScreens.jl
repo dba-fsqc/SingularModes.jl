@@ -14,8 +14,8 @@ using Statistics
 using HypergeometricFunctions
 using Printf
 
-include("BasicFunctions.jl")
-include("ModeGeneration.jl")
+using ..BasicFunctions
+using ..ModeGeneration
 
 
 # I. Zernike covariances

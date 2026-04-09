@@ -14,8 +14,8 @@ export svd_lgs_square, svd_square_wrapper, transmission_pixel
 export svd_lgs_pixel
 
 using LinearAlgebra
-include("BasicFunctions.jl")
-include("ModeGeneration.jl")
+using ..BasicFunctions
+using ..ModeGeneration
 
 
 # I. Propagators

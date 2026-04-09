@@ -5,6 +5,7 @@
 
 module ModeGeneration
 
+
 export pl2j, nm2j, mn2j, j2pl, j2nm, j2mn, j2nmax, noll_pyramid
 export zk, lg, hg, besselbeam, besselgaussian, points2grid
 export lg_mode, hg_mode, bg_mode, zk_mode, mode_pyramid, zka_load
@@ -18,7 +19,7 @@ using HypergeometricFunctions
 using JLD2
 using Printf
 
-include("BasicFunctions.jl")
+using ..BasicFunctions
 
 
 # I. Index conventions

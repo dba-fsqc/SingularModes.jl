@@ -10,9 +10,9 @@ export radial_avg, phase_struct_rd, zernike_covariance
 
 using Random
 
-include("BasicFunctions.jl")
-include("ModeGeneration.jl")
-include("PhaseScreens.jl")
+using ..BasicFunctions
+using ..ModeGeneration
+using ..PhaseScreens
 
 
 """
