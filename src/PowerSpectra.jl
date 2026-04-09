@@ -5,6 +5,8 @@
 
 module PowerSpectra
 
+export atm_spec, oce_spec, ps2struct, atm_struct
+
 using SpecialFunctions
 using QuadGK
 
