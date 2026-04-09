@@ -5,8 +5,25 @@
 
 module PhaseScreens
 
-export zk_covmat, ph_ft, ph_sh, ph_zk, ph_hd, ph_kl, ph_x
-export phz_x, fourier_shift, wind_shift, get_phzT
+#! format: off
+export 
+    pFq_reg,
+	zk_cov_atm,
+	zk_cov_num,
+	zk_covmat,
+	ph_ft,
+	ph_sh,
+	ph_zk,
+	zk_overlap,
+	ph_hd,
+	ph_kl,
+	ph_x,
+	phz_x,
+	screen_factor,
+	fourier_shift,
+	wind_shift,
+	get_phzT
+#! format: on
 
 using Random
 using LinearAlgebra

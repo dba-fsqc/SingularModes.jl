@@ -4,10 +4,24 @@
 
 module BasicFunctions
 
-export ft, ift, zeropad, inner_circ, rect, cart2pol, pol2cart
-export meshgrid
-export print_paras, msum, norm_mode, wopt, rayleigh_waist
-export norm_coeff
+#! format: off
+export
+	ft,
+	ift,
+	struct_fcn2_ft,
+	meshgrid,
+	zeropad,
+	inner_circ,
+	rect,
+	cart2pol,
+	pol2cart,
+	print_paras,
+	msum,
+	norm_mode,
+	wopt,
+	rayleigh_waist,
+	norm_coeff
+#! format: on
 
 using FFTW
 using Printf
@@ -33,7 +47,7 @@ end
 
 Inverse multi dimensional Fourier transfrom. See also [`ft`](@ref).
 """
- function ift(
+function ift(
     g::Array,
     delta_f::Number
     )

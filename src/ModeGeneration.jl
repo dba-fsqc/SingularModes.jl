@@ -5,13 +5,44 @@
 
 module ModeGeneration
 
-
-export pl2j, nm2j, mn2j, j2pl, j2nm, j2mn, j2nmax, nmax2j, noll_pyramid
-export zk, lg, hg, besselbeam, besselgaussian, points2grid
-export lg_mode, hg_mode, bg_mode, zk_mode, mode_pyramid, zka_load
-export mode_pyramid_load
-export pcl, pcl_mod, pcl_arc, pcl_geo, pcl_lim, bcl
-export rho_mean_bg, pcl_bg
+#! format: off
+export
+    pl2j,
+    nm2j,
+    mn2j,
+    j2pl,
+    j2nm,
+    j2mn,
+    j2nmax,
+    nmax2j,
+    noll_pyramid,
+    r_z,
+    zk,
+    laguerre,
+    lg,
+    hg_1d,
+    hg,
+    besselbeam,
+    besselgaussian,
+    make_grid,
+    _default_N,
+    points2grid,
+    lg_mode,
+    hg_mode,
+    bg_mode,
+    zk_mode,
+    mode_pyramid,
+    mode_pyramid_load,
+    zka_load,
+    pcl,
+    pcl_mod,
+    pcl_arc,
+    pcl_geo,
+    pcl_lim,
+    bcl,
+    rho_mean_bg,
+    pcl_bg
+#! format: on
 
 using SpecialFunctions
 using Polynomials

@@ -7,11 +7,30 @@
 
 module Propagation
 
-export fraunhofer_prop, lens_against_ft, ang_spec_prop
-export rayleigh_length, sigma_R2, min_ns, multi_step_variable
-export propagate, modeset_propagation, transmission_square
-export svd_lgs_square, svd_square_wrapper, transmission_pixel
-export svd_lgs_pixel
+#! format: off
+export 
+    fraunhofer_prop,
+	lens_against_ft,
+	ang_spec_prop,
+	rayleigh_length,
+	sigma_R2,
+	sigma_R2_1,
+	cn2,
+	cn2sr,
+	r0step,
+	min_ns,
+	multi_step_variable,
+	propagate,
+	modeset_propagation,
+	transmission_square,
+	svd_lgs_square,
+	svd_square_wrapper,
+	transmission_pixel,
+	svd_lgs_pixel,
+	delta_tmat,
+	gws_q,
+	principal_modes
+#! format: on
 
 using LinearAlgebra
 using ..BasicFunctions

@@ -5,7 +5,14 @@
 
 module PowerSpectra
 
-export atm_spec, oce_spec, ps2struct, atm_struct
+#! format: off
+export 
+    atm_spec,
+	_oce_delta,
+	oce_spec,
+	ps2struct,
+	atm_struct
+#! format: on
 
 using SpecialFunctions
 using QuadGK

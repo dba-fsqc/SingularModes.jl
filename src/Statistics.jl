@@ -6,7 +6,15 @@
 
 module Statistics
 
-export radial_avg, phase_struct_rd, zernike_covariance
+#! format: off
+export
+	points_in_circ,
+	radial_avg,
+	chunk_avg,
+	phase_struct_ft,
+	phase_struct_rd,
+	zernike_covariance
+#! format: on
 
 using Random
 

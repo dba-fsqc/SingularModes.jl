@@ -4,7 +4,16 @@
 
 module Plotting
 
-export s_plot, mode_plot, clean_mode_plot, ps_plot, tmat_plot
+#! format: off
+export 
+	s_plot,
+	phasemap,
+	colorbar2d_plot,
+	mode_plot,
+	clean_mode_plot,
+	ps_plot,
+	tmat_plot
+#! format: on
 
 using Plots
 using ColorSchemes
