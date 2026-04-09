@@ -18,6 +18,8 @@ export
 using Plots
 using ColorSchemes
 
+using ..BasicFunctions
+
 # """
 #     minimal_default(x)
 
