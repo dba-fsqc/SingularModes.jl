@@ -15,7 +15,7 @@ export print_paras, msum, norm_mode, wopt, rayleigh_waist
 export norm_coeff
 
 using .ModeGeneration
-export pl2j, nm2j, mn2j, j2pl, j2nm, j2mn, j2nmax, noll_pyramid
+export pl2j, nm2j, mn2j, j2pl, j2nm, j2mn, j2nmax, nmax2j, noll_pyramid
 export zk, lg, hg, besselbeam, besselgaussian, points2grid
 export lg_mode, hg_mode, bg_mode, zk_mode, mode_pyramid, zka_load
 export pcl, pcl_mod, pcl_arc, pcl_geo, pcl_lim, bcl
