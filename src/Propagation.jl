@@ -8,7 +8,7 @@
 module Propagation
 
 export fraunhofer_prop, lens_against_ft, ang_spec_prop
-export rayleigh_length, sigma_R2, multi_step_variable
+export rayleigh_length, sigma_R2, min_ns, multi_step_variable
 export propagate, modeset_propagation, transmission_square
 export svd_lgs_square, svd_square_wrapper, transmission_pixel
 export svd_lgs_pixel

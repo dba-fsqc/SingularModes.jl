@@ -519,7 +519,7 @@ function phz_x(
     rss = rand(1:10^6, ns)
     phz = zeros(ns, N, N)
     Threads.@threads for i in 1:ns
-        phz[i, :, :] = 1/ns * ph_x( # fix this!!!!!!!!!!
+        phz[i, :, :] = 1/ns * ph_x(
             pow_spec,
             kind=kind,
             N=N,
