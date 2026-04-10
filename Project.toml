@@ -1,6 +1,6 @@
 name = "SingularModes"
 uuid = "630bf884-3bbe-4fe9-8bc5-255f673a196e"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["David Bachmann"]
 
 [deps]
