@@ -29,6 +29,9 @@ export
 	norm_coeff
 #! format: on
 
+using .FigureDefaults
+export set_fig_defaults
+
 using .ModeGeneration
 #! format: off
 export

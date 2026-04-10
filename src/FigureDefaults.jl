@@ -4,6 +4,8 @@
 
 module FigureDefaults
 
+export set_fig_defaults
+
 using Plots
 using LaTeXStrings
 plot_font = "Computer Modern"
