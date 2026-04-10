@@ -69,11 +69,10 @@ This software package is structured as follows:
 │   └── ...
 │
 ├── examples               [code examples]
-│   ├── static             [cached arrays of LG/ZK/KL modes for faster computation]
-│   │
+│   ├── 01-LG-beams... .jl [LG beam propagation with manual parameters]
+│   ├── 02-LG-beams.jl     [LG beam propagation]
+│   ├── 03-SVD-square.jl   [Singular modes with square transmission matrix]
 │   ├── parameters.jl      [sample parameter file]
-│   ├── LG-Beams.jl        [sample code for the propagtion of Lagurre-Gaussian beams]
-│   ├── Singularmodes.jl   [sample code for the computation of singular modes]
 │   └── ...
 │
 ├── tests                  [code tests]
