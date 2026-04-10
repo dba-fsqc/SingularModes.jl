@@ -47,7 +47,13 @@ function s_plot(
     svs::Vector;
     m::Int=-1
     )
-    p = plot(1:size(svs, 1), svs, color=:red3)
+    p = plot(
+        1:size(svs, 1),
+        svs,
+        color=:red3,
+        xlabel="\$k\$",
+        ylabel="\$\\tau_k\$"
+        )
     if m !== -1
         vline!([m], color=:gray, line=:dash)
         scatter!(
