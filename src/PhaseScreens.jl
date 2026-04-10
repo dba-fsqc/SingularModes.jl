@@ -549,7 +549,7 @@ function phz_x(
     if r0tot == 0
         return phz
     else 
-        return phz * r0tot^(-5 / 3) .* Rarray[2:2:end-1].^(5 / 6)
+        return phz * r0tot^(-5 / 3) .* (Rarray[2:2:end-1]/4).^(5 / 6)
     end
 end
 
