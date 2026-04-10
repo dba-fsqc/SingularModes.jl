@@ -215,15 +215,13 @@ end
 Print parameters from `parameters.jl`.
 """
 function print_paras(
-    datdir::String,
-    Rphys::Real,
     outin::Real,
     zzR::Number,
     N::Integer,
     Nin::Integer,
     Rin::Real,
-    RoutC::Real,
     Rout::Real,
+    RoutD::Real,
     din::Real,
     dout::Real,
     wvl::Real,
@@ -234,7 +232,7 @@ function print_paras(
     zR::Real,
     nhigh::Real,
     ratio::Real,
-    spec::String,
+    spect::String,
     r0::Real,
     l0::Real,
     L0::Real,
@@ -249,17 +247,14 @@ function print_paras(
     deltat::Real,
     Ts::Integer
     )
-    
+    Rphys = 1
     @printf("########## PARAMETER INFO #############\n")
-
-    @printf("-- Naming --\n")
-    @printf("datdir= %s\n", datdir)
 
     @printf("\n-- Geometry --\n")
     @printf("outin = %.2f\n", outin)
     @printf("Rin   = %.2fcm\n", Rin * Rphys * 1e2)
-    @printf("RoutC = %.2fcm\n", RoutC * Rphys * 1e2)
-    @printf("Rout  = %.2fcm\n", Rout * Rphys * 1e2)
+    @printf("Rout = %.2fcm\n", Rout * Rphys * 1e2)
+    @printf("RoutD  = %.2fcm\n", RoutD * Rphys * 1e2)
     @printf("wvl   = %.0fnm\n", wvl * Rphys * 1e9)
     @printf("zzR   = %.2f\n", zzR)
     @printf("zR    = %.2fm\n", zR * Rphys)
@@ -279,7 +274,7 @@ function print_paras(
     @printf("ratio = %.2f\n", ratio)
 
     @printf("\n-- Turbulence --\n")
-    @printf("spec  = %s\n", spec)
+    @printf("spec  = %s\n", spect)
     if r0 == Inf
         @printf("r0    = infinity\n")
     else
