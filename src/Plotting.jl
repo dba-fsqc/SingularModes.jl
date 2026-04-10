@@ -1,5 +1,6 @@
 # Plotting.jl
 # This module contains all plotting routines for the `Plots` package.                                                        .
+# Depends on `BasicFunctions.jl`.
 # v1.1
 
 module Plotting

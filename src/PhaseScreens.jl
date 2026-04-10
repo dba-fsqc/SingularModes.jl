@@ -541,7 +541,7 @@ function phz_x(
             pow_spec,
             kind=kind,
             N=N,
-            R=Rarray[i],
+            R=Rarray[2*i],
             rs=rss[i];
             kwargs...
             )
@@ -549,7 +549,7 @@ function phz_x(
     if r0tot == 0
         return phz
     else 
-        return phz * r0tot^(-5/3)
+        return phz * r0tot^(-5 / 3) .* Rarray[2:2:end-1].^(5 / 6)
     end
 end
 
