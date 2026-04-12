@@ -1,3 +1,5 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 SingularModes = "630bf884-3bbe-4fe9-8bc5-255f673a196e"
+[compat]
+SingularModes = "0.1.1"
